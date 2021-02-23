@@ -90,7 +90,7 @@ textarea {
 
 .content-wrapper {
   width: 90%;
-  padding: 50%;
+  margin: 50px 0;
 }
 
 /******** Base Header/Footer styles ***********/
@@ -158,6 +158,15 @@ footer .contact {
 
 footer p {
   margin: 0;
+}
+
+footer .copyright {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.copyright p {
+  text-align: center;
 }
 
 /************** Mobile Homepage Styles ****************/
@@ -431,3 +440,123 @@ aside {
   }
 }
 
+/************ Tablet styles ******************/
+
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    width: 84%;
+    margin: 100px 0;
+  }
+  /* Header */
+
+  header {
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+  header nav ul{
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Aside */
+  aside .content-wrapper{
+    margin: 50px 0;
+  }
+  .form-description,
+  .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* Footer */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .contact,
+  .social {
+    width: 49%;
+  }
+ 
+
+  /********** ABOUT PAGE *********/
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 45%;
+    padding-top: 35px;
+  }
+  .contact-section .contact-wrapper h2 {
+    width: 80%;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .general-info,
+  .chat {
+    width: 50%;
+    flex-direction: column;
+  }
+
+
+/*********** FAQ PAGE ************/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+  .faq-content {
+    flex-basis: 40%;
+  }
+  .faq h2 {
+    width: 100%;
+  }
+
+}
+
+   
+ /************** Desktop styles ***************/
+
+  @media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+  }
