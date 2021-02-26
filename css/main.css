@@ -233,8 +233,10 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
-  background: url(../img/jake-melara-30679-unsplash.jpg) 
+  background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -256,7 +258,8 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url(../img/rawpixel-800820-unsplash1.jpg);
+  background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
