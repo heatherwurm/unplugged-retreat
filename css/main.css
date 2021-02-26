@@ -125,16 +125,16 @@ h4 {
 }
  
 p {
-  line-height: 1.125em;
+  line-height: 1.285em;
   font-size: .875em;
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -168,6 +168,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -233,10 +241,11 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -252,6 +261,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background: #527158;
+}
+
+aside .content-wrapper {
+  margin: 25px 0 50px 0;
 }
 
 .features {
@@ -296,6 +309,13 @@ aside {
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+}
+
+.reviews figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 aside .form {
@@ -553,6 +573,16 @@ input[type=button] {
     width: 84%;
     margin: 100px 0;
   }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
   /* Header */
 
   header {
@@ -563,9 +593,15 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 35%;
+  }
+
   header nav {
     width: 20%;
+    font-size: 1em;
   }
+
   header nav ul{
     justify-content: space-between;
   }
@@ -573,6 +609,16 @@ input[type=button] {
   .header-divider {
     display: none;
   }
+
+  /* Hero */
+  .hero-area {
+    min-height: 600px;
+  }
+  .hero-area h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
 
   /* Aside */
   aside .content-wrapper{
@@ -586,6 +632,7 @@ input[type=button] {
     width: 40%;
     margin: 0;
   }
+
 
   /* Features */
   .features article {
@@ -604,11 +651,28 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
   }
+
+  .reviews figure {
+    width: 49%;
+  }
   .reviews article div {
     width: 49%;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin:0;
+  }
+
   /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  }
+
   .footer-content {
     display: flex;
     justify-content: space-between;
@@ -664,6 +728,10 @@ input[type=button] {
   .faq h2 {
     width: 100%;
   }
+  .faq h3,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
 
 }
 
@@ -675,15 +743,35 @@ input[type=button] {
     width: 80%;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
   /* Hero */
   .hero-area h1 {
-    width: 70%;
+    width: 80%;
+    font-size: 3.75em;
+  }
+  
+  .hero-area .content-wrapper {
+    margin: 50px 0;
   }
 
   /* Aside */
   aside .content-wrapper {
     justify-content: space-around;
   }
+
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 33%;
@@ -698,12 +786,40 @@ input[type=button] {
   .reviews article div {
     width: 45%;
   }
+
+  .reviews h2 {
+    margin-bottom: 100px;
+  }
+
+  .reviews p {
+    line-height: 1.5em;
+  }
   
   /**** ABOUT PAGE ****/
+
   .mission h2 {
     width: 90%;
   }
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      font-size: 3em;
+  }
   .contact-section .content-wrapper h2 {
     width: 95%;
+  }
+  .contact-content h3 {
+    font-size: 1.875em;
+  }
+
+  /**** FAQ PAGE ****/
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+    
+  .faq h3,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 }
